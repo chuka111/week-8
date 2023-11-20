@@ -1,1 +1,2 @@
-some different content for the file.today is monday.
+today is monday.
+tomorrow is tuesday.
