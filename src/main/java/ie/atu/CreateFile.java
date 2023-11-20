@@ -4,11 +4,17 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class CreateFile {
 
     public static void main(String[] args){
-        String fileName = "File14.txt";
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter file name:");
+        String.userInput = scanner.nextLine();
+
+        String fileName = userInput;
 
         try (PrintWriter writer = new PrintWriter (new FileWriter(fileName, true))){
 
