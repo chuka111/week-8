@@ -8,8 +8,8 @@ public class CreateFile {
     public static void main(String[] args){
         String fileName = "File14.txt";
 
-        try (FileWriter writer = new FileWriter(fileName)){
-         writer.write("some different content for the file.");
+        try (FileWriter writer = new FileWriter(fileName, true)){
+         writer.write("today is monday.");
 
          System.out.println("content successfully writen to the file");
         }catch (IOException e){
